@@ -117,10 +117,10 @@ strong{
     box-shadow: none !important; }
 
 .site-section {
-  padding: 4.5em 0; }
+  padding: 3em 0; }
   @media (min-width: 768px) {
     .site-section {
-      padding: 3em 0; } }
+      padding: 4em 0; } }
   .site-section.site-section-sm {
     padding: 1em 0; }
 
@@ -947,11 +947,11 @@ strong{
   opacity: 0;
   pointer-events: none;
   transition: opacity 300ms ease-in;
-  border: hidden;
-
+  border: none;
 }
 .arrow-up.visible {
   opacity: 1;
   pointer-events: auto;
-
+  background-color: transparent !important;
+  border: none;
 }

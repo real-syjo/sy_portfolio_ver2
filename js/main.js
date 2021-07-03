@@ -375,7 +375,7 @@ function scrollIntoView(selector){
 }
 
 // Show "arrow-up" button when scrolling down 
-const navbar = document.querySelector('.site-navbar-wrap');
+const navbar = document.querySelector('.site-section');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
 const arrowUp = document.querySelector('.arrow-up');
@@ -389,5 +389,5 @@ document.addEventListener('scroll', ()=>{
 
 // Arrow-up to home
 arrowUp.addEventListener('click',()=>{
-	scrollIntoView('.site-navbar-wrap');
+	scrollIntoView('.site-section');
 })

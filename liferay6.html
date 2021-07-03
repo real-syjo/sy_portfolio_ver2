@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Grunt &mdash; Website Template by Colorlib</title>
+    <title>SyJO &mdash; Portfolio Website</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/7ebfe642cb.js" crossorigin="anonymous"></script>
@@ -29,9 +29,9 @@
         <h1><a class="p-3 " href="index.html"><i class="fas fa-chevron-circle-left"></i> Back</a></h1>
       <div class="container">
         <div class="row mb-5">
-          <div class="col-lg-6 section-title">
+          <div class="col-lg-8 section-title">
             <a class="sub-title mb-2 d-block" href="https://www.edison.re.kr/"><i class="fas fa-link"></i>https://www.edison.re.kr/</a>
-            <h6 class="title text-primary">Liferay6.2 EDISON <br>포털 보안 강화를 위한 <br>OTP 적용 체계 개발 </h6>
+            <h6 class="title text-primary">Liferay6.2 EDISON 포털 보안 강화를 위한 OTP 적용 체계 개발 </h6>
           </div>
         </div>
         <div class="row no-gutters">
@@ -43,8 +43,8 @@
                   <h3>프로젝트 소개</h3>
                   <span class="mb-4 d-block">Liferay FrameWork 6.2</span>
                   <p>한국과학기술정보연구원(KISTI)의 계산 자원을 활용하여 다양한 분야의 시뮬레이션 SW 및 데이터 수집/저장/AI분석 등 웹 기반으로
-                    <br>One-stop 서비스 받을 수 있는 통합 플랫폼입니다. 저는 계산자원 접근 권한을 부여하는 OTP 누리온 사용 권한 신청 기능과 사용자 접근
-                    <br>이력 관리 그리고 앱 스토어의 Lucene 검색엔진 기능을 적용하였습니다.
+                    One-stop 서비스 받을 수 있는 통합 플랫폼입니다. 저는 계산자원 접근 권한을 부여하는 OTP 누리온 사용 권한 신청 기능과 사용자 접근
+                    이력 관리 그리고 앱 스토어의 Lucene 검색엔진 기능을 적용하였습니다.
                  </p>
                 </div>
               </div>
@@ -121,21 +121,18 @@
           </div>
           <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
             <h3>접근 이력 관리</h3>
-            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-            <p class="mb-4><a href="https://www.edison.re.kr/" class="readmore">Visit website</a></p>
+            <p class="mb-4">특정 페이지에 접근한 사용자의 이력을 실시간으로 수집하고 접근 시간과 사용자 정보를 확인할 수 있습니다.</p>
+            
             <div class="testimonial bg-white h-100">
               <blockquote class="mb-3">
-                <p>&ldquo;Far far away, behind the word mountains, <strong>far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</strong> right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                <p>HttpSesstion.getId()를이용하여세션에할당된아이디정보를String으로
+                  리턴받아계정정보를수집하였습니다.
+                  InetAddress.getLocalHost ( ).getHostName ( )에서 InetAddress 객체에
+                  의해 표현되는 IP 주소에 해당하는 호스트 네임을 String으로 리턴받아
+                  수집하였습니다. InetAddress.getLocalHost ( ).getHostAddress ( )를 통해
+                  호스트의IP정보를String으로
+                  리턴받아수집하였습니다</p>
               </blockquote>
-              <div class="d-flex align-items-center vcard">
-                <figure class="mb-0 mr-3">
-                  <img src="images/person_3.jpg" alt="Image" class="img-fluid ounded-circle">
-                </figure>
-                <div class="vcard-text">
-                  <span class="d-block">Jacob Spencer</span>
-                  <span class="position">Web Designer</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -146,21 +143,17 @@
           </div>
           <div class="col-lg-5 h-100 jm-sticky-top mr-auto order-2 order-lg-1">
             <h3>OTP 권한 관리</h3>
-            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p class="mb-4">'누리온(국가슈퍼컴퓨터)'을 사용하여 "계산 자원 시뮬레이션"을 활용할 수 있는 서버 활용 권한을 Liferay에서 제공하는
+              JSONWS를 이용하여 신청하는 기능입니다.</p>
             <p class="mb-4"><a href="https://www.edison.re.kr/" class="readmore">Visit website</a></p>
             <div class="testimonial bg-white h-100">
               <blockquote class="mb-3">
-                <p>&ldquo;A small river named Duden <strong>flows by their place and supplies it with the necessary regelialia</strong>. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
+                <p>접수신청버튼을비동기로처리함으로서접수와동시에타임라인UI상태가
+                  변경이되는것을확인할수있도록구현하였습니다.오픈소스UI를사용하여
+                  스트립트를제가구현하려는설계에맞게커스텀하는경험을할수있었습니다.
+                  라이프레이에서제공하는JSONWSAPI를통해외부에서도접수가가능하도록
+                  하는서비스를만들어API통신에대해서배울수있었습니다.</p>
               </blockquote>
-              <div class="d-flex align-items-center vcard">
-                <figure class="mb-0 mr-3">
-                  <img src="images/person_4.jpg" alt="Image" class="img-fluid ounded-circle">
-                </figure>
-                <div class="vcard-text">
-                  <span class="d-block">Jean Smith</span>
-                  <span class="position">Web Designer</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -190,6 +183,11 @@
       </div>
     </footer>
   </div>
+
+  <!-- arrow up -->
+  <button class="arrow-up">
+    <i class="fas fa-arrow-circle-up"></i>
+  </button>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
