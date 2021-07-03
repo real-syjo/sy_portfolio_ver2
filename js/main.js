@@ -367,3 +367,27 @@ jQuery(document).ready(function($) {
 	stickyFillInit();
 
 });
+
+
+function scrollIntoView(selector){
+	const scrollTo = document.querySelector(selector);
+	scrollTo.scrollIntoView({behavior: 'smooth'});
+}
+
+// Show "arrow-up" button when scrolling down 
+const navbar = document.querySelector('.site-navbar-wrap');
+const navbarHeight = navbar.getBoundingClientRect().height;
+
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', ()=>{
+	if(window.scrollY> navbarHeight / 2){
+		arrowUp.classList.add('visible');
+	}else{
+		arrowUp.classList.remove('visible');
+	}
+})
+
+// Arrow-up to home
+arrowUp.addEventListener('click',()=>{
+	scrollIntoView('.site-navbar-wrap');
+})
