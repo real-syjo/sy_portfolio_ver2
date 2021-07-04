@@ -80,10 +80,9 @@
             </p>
             
             <p class="mb-4">
-              기존의 사이언스 앱 데이터를 Liferay에 내장된 lucene 라이브러리 검색엔진을 활용하였습니다. 
-              사이언스 앱에 조회되는 여러 타입의 데이터 정보를 documnet에 태워 색인화 하였습니다. 
-              적용 후 검색 및 데이터 로드 속도가 눈에 띄게 향상됨을 확인할 수 있었습니다.
-             
+              기존의 사이언스 앱 데이터에 Liferay에 내장된 lucene 라이브러리 검색엔진을 적용하였습니다. 
+              사이언스 앱에 조회되는 여러 타입의 데이터 정보를 Documnet 객체에 add하여 색인화 하였습니다. 
+              적용 후 검색 및 데이터 로드 속도가 향상됨을 확인할 수 있었습니다.
             </p>
           </div>
         </div>
@@ -95,8 +94,8 @@
           </div>
           <div class="col-lg-5 h-100 jm-sticky-top mr-auto order-2 order-lg-1">
             <h3><strong>Lucene 검색 엔진</strong></h3>
-            <p class="mb-4"> 라이브러리가 내장되어 있어 Indexing 클래스 파일에 document를 통한 getDocument, delete, update, reindex등의 메서드를 
-              활용하여 색인 문서화하였습니다. 데이터에 변화가 있는 경우 새롭게 인덱싱 함으로서 Document의 최신화 관리가 되도록 하였습니다.</p>
+            <p class="mb-4"> 라이브러리가 내장되어 있어 Indexing 클래스 파일에 document를 통한 getDocument, doDelete, doUpdate, doReindex등의 메서드를 
+              활용하여 Document를 활용하였습니다. 데이터에 변화가 있는 경우 새롭게 인덱싱 함으로서 Document의 최신화 관리가 되도록 하였습니다.</p>
      
             <div class="testimonial bg-white h-100">
               <blockquote class="mb-3">
