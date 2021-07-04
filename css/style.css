@@ -21,8 +21,14 @@ a {
   a:hover {
     text-decoration: none; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6{
   color: #000; }
+
+.introduce {
+  color: gray;
+  line-height: 1.6;
+  color:#404040;
+}
 
 strong{
   background: #faf5bb;
@@ -912,6 +918,7 @@ strong{
   align-items: center;
   padding-bottom: 6%;
 }
+
 .job__description {
   text-align: left;
   padding-left: 5%;
@@ -921,6 +928,7 @@ strong{
   font-size: 13px;
   margin-bottom: 1%;
 }
+
 .job_logo{
   width:50px;
   height:50px;

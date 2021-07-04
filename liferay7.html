@@ -30,7 +30,7 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-lg-8 section-title">
-            <a class="sub-title mb-2 d-block" href="https://station.re.kr/"><i class="fas fa-link"></i>https://station.re.kr/</a>
+            <a class="sub-title mb-2 d-block" target="_blank"  href="https://station.re.kr/"><i class="fas fa-link"></i>https://station.re.kr/</a>
             <h6 class="title text-primary">오픈소스 Liferay 7.2 기반 사이언스앱마켓 개발플랫폼 패키지 클라이언트 UI 개발</h6>
           </div>
         </div>
@@ -42,6 +42,7 @@
                 <div class="pr-lg-5">
                   <h3>프로젝트 소개</h3>
                   <span class="mb-4 d-block">Liferay FrameWork 7.2</span>
+                  <p class="mb-4"><a href="https://station.re.kr/" target="_blank" class="readmore">Visit website</a></p>
                   <p>재료, 생명공학 등 다양한 분야의 데이터를 활용하여 효율적인 연구활동이 가능하도록 데이터를 관리 및 공유하는 웹사이트 입니다.
                   <br>저는 연구 데이터 앱의 상세화면과 Tree 형태로 연구데이터를 구조화하여 관리할 수 있는 Data Collection을 구현하였습니다.</p>
                 </div>
@@ -69,15 +70,22 @@
           <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
             <h3><strong>Data Collection</strong></h3>
             <p class="mb-4">
-               연구자들이 등록한 연구데이터 정보를 기반으로 구축한 data Structure 관리 기능입니다.<br>
-              data Structure를 가장 효율적으로 관리할 수 있을지 설계를 통한 구조 파악과 구현을 통해 데이터에 관련된 기능이 이렇게 다뤄질 수 있구나 함을 느꼈습니다. 
-              
+              다양한 분야의 연구 데이터 타입을 모두 수용하고 효율적인 관리를 목적으로한 기능입니다.
+              부모노드를 중심으로 하위 노드에 연관된 데이터를 단수 혹은 복수로 저장하여 탐색 속도와 
+              관리의 효율성을 높힐 수 있었습니다. <br>
+              <br>
+              1. 데이터의 부모 노드인 Collection, set, section에 상세정보를 입력하여 등록합니다.<br>
+              2. 등록할 자식노드의 수가 복수면 Pack 단수면 Entry를 선택합니다. (Pack은 Entry의 묶음)<br>
+              3. 등록할 데이터의 DataType을 선택한다. 
+                 기존의 DataType selector (데이터 타입에 따라 입력 폼을 다르게 불러오는)를 연동하여 
+                 다양한 데이터의 형태를 구분하여 저장 할 수 있도록 합니다.<br>
+              4. 선택한 dataType에 맞게 데이터를 업로드합니다.<br>
+              5. 하나의 컬렉션이 완성이 되고 fancytree.js를 통해 key값으로 데이터를 출력합니다.
             </p> 
-            <p class="mb-4"><a href="https://station.re.kr/" class="readmore">Visit website</a></p>
             <div class="testimonial bg-white h-100">
               <blockquote class="mb-3">
-                <p>*카카오 OVEN 프로토타이핑 툴을 활용한 연구데이터 Data Collection 사용자 메뉴얼</p>
-                <br><a href="https://ovenapp.io/view/9OiPNw9MRsoFqktwqUyFnvtUekA2fouU/"><b>메뉴얼 바로가기 Click</b></a>
+                <p>* 제가 만든 카카오 OVEN 프로토타이핑 툴을 활용한 연구데이터 Data Collection 사용자 메뉴얼 입니다.</p>
+                <a href="https://ovenapp.io/view/9OiPNw9MRsoFqktwqUyFnvtUekA2fouU/" target="_blank" ><strong>메뉴얼 바로가기 Click</strong></a>
               </blockquote>
             
             </div>
@@ -90,8 +98,11 @@
           </div>
           <div class="col-lg-5 h-100 jm-sticky-top mr-auto order-2 order-lg-1">
             <h3><strong>Data Collection</h3><h5>_data Modeling</strong></h5>
-            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-            <p class="mb-4"><a href="https://station.re.kr/" class="readmore">Visit website</a></p>
+            <p class="mb-4">
+              다양한 형태의 연구 데이터 결과를 연관된 콜랙션으로 묶어 탐색이 쉽고 효율적 관리가 가능하도록
+              계층형 모델로 구현하게 되었습니다. Collection, Set, Section, Pack, entry 단위로 각 테이블에 부모 Key값이 외래키로 묶여 있고
+              상위 노드가 삭제 되면 하위 노드 전체가 삭제 되도록 구현했습니다. 
+            </p>
           </div>
         </div>
 
@@ -101,11 +112,10 @@
             <img src="images/project/appView2.png" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
-            <h3>앱 마켓 상세</h3>
+            <h3><b>앱 마켓 상세</b></h3>
             <p class="mb-4">연구자가 등록한 연구 데이터 정보를 어플리케이션 형태로 공유하는 페이지 입니다. 앱의 상세정보와 즐겨찾기, 평점등록, 후기작성, 앱 다운로드 등
               한 상세페이지에서 여러 콘텐츠를 볼 수 있도록 구현하였습니다.
             </p>
-            <p class="mb-4"><a href="https://station.re.kr/" class="readmore">Visit website</a></p>
             <div class="testimonial bg-white h-100">
               <blockquote class="mb-3">
                 <p>&ldquo; 한 페이지에서 여러 요소를 디스플레이 별로 UI UX를 고려하여 구현해야 했기때문에 반응형에 대해서 공부 할 수 있는 좋은 기회였습니다&ldquo;<br>
