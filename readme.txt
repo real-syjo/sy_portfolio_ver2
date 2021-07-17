@@ -1,8 +1,12 @@
-Thank you for using our template!
+# syjo_portfolio 
 
-For more awesome templates please visit https://colorlib.com/wp/templates/
 
-Copyright information for the template can't be altered/removed unless you purchase a license.
-More information about the license is available here: https://colorlib.com/wp/licence/
 
-Removing copyright information without the license will result in suspension of your hosting and/or domain name(s).
+#### 풀스택 개발자 조소연의 웹 포트폴리오입니다. 
+
++ 개발툴
+  + VSCODE
++ 개발언어
+  + javaScript  
+  + css
+  + html5
